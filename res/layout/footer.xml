@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <RadioButton
+        android:id="@+id/radioKeepAccounts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/keep_accounts"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:background="@+color/blue"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" />
+    <RadioButton
+        android:id="@+id/radioViewReports"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/view_reports"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:background="@+color/blue"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" />
+    <RadioButton
+        android:id="@+id/radioSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:background="@+color/blue"/>
+    
+</RadioGroup>

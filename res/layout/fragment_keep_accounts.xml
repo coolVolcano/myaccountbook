@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <TextView
+        android:id="@+id/txtOutcomeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/label_outcome_type" />
+    
+    <Spinner
+        android:id="@+id/spnOutcomeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtOutcomeType"
+        android:layout_alignBaseline="@+id/txtOutcomeType"
+        android:entries="@array/outcome_types"/>
+
+	<TextView
+        android:id="@+id/txtOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOutcomeType"
+        android:text="@string/label_outcome" 
+        android:layout_alignBaseline="@+id/etxOutcome"/>
+
+	<EditText
+	    android:id="@+id/etxOutcome"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/spnOutcomeType"
+	    android:layout_below="@+id/spnOutcomeType"
+	    android:ems="10"
+	    android:inputType="numberDecimal" >
+
+	</EditText>
+	
+	<TextView
+        android:id="@+id/txtRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOutcome"
+        android:text="@string/label_remark" 
+        android:layout_alignBaseline="@+id/etxRemark"/>
+
+	<EditText
+	    android:id="@+id/etxRemark"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/etxOutcome"
+	    android:layout_below="@+id/etxOutcome"
+	    android:inputType="text"
+	    android:ems = "10">
+	</EditText>
+
+	<Button
+	    android:id="@+id/btnAdd"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:layout_below="@+id/etxRemark"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/btn_add"
+	    android:textSize="12sp"
+	    android:textColor="@android:color/white"
+	    android:background="@+drawable/button_shape"/>
+	
+	<TextView android:id="@+id/txtSummary"
+	    android:layout_width="200dp"
+	    android:layout_height="40dp"
+	    android:textSize="12sp"
+	    android:layout_below="@+id/btnAdd"
+	    android:layout_alignBaseline="@+id/btnSendTextMessage"/>
+	
+	<Button
+	    android:id="@+id/btnSendTextMessage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:text="@string/btn_sendTextMessage"
+	    android:textSize="12sp"
+	    android:textColor="@android:color/white"
+	    android:background="@+drawable/button_shape2"
+	    android:layout_toRightOf="@+id/txtSummary"
+	    android:layout_below="@+id/btnAdd"
+	    android:layout_alignParentRight="true"/>
+
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btnSendTextMessage"
+	    android:layout_marginTop="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:id="@+id/tblAccountRecord">
+
+	    <TableRow
+	        android:id="@+id/trHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        
+	        <TextView
+		        android:id="@+id/lblBlank"
+		        android:layout_width="0dip"
+		        android:layout_height="50dp"
+		        android:layout_marginRight="1dp"
+		        android:background="@+color/blue"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:layout_weight=".15"/>
+	        
+	        <TextView
+		        android:id="@+id/lblOutcomeType"
+		        android:layout_width="0dip"
+		        android:layout_height="50dp"
+		        android:text="@string/table_header_outcome_type"
+		        android:layout_marginRight="1dp"
+		        android:background="@+color/blue"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:layout_weight=".15"/>
+	        
+	        <TextView
+		        android:id="@+id/lblOutcome"
+		        android:layout_width="0dip"
+		        android:layout_height="50dp"
+		        android:text="@string/table_header_outcome"
+		        android:layout_marginRight="1dp"
+		        android:background="@+color/blue"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:layout_weight=".15"/>
+	        
+	        <TextView
+		        android:id="@+id/lblTime"
+		        android:layout_width="0dip"
+		        android:layout_height="50dp"
+		        android:text="@string/table_header_time"
+		        android:layout_marginRight="1dp"
+		        android:background="@+color/blue"
+		        android:textColor="@android:color/white"
+		       	android:gravity="center"
+		       	android:layout_weight=".3"/>
+	        
+	        <TextView
+		        android:id="@+id/lblRemark"
+		        android:layout_width="0dip"
+		        android:layout_height="50dp"
+		        android:text="@string/table_header_remark"
+		        android:background="@+color/blue"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:layout_weight=".25"/>
+	    </TableRow>
+
+	</TableLayout>
+
+</RelativeLayout>

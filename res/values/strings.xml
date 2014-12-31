@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">记账簿</string>
+	<string name="keep_accounts">记账</string>
+    <string name="view_reports">财报</string>
+    <string name="settings">设置</string>
+    <string name="please_input_username">请在此输入您的名字</string>
+    <string name="please_input_sms_receiver_phone_number">请在此输入短信接收人的手机号码</string>
+    <string name="please_set_sms_receiver_number">您还没有设置短信接收人号码，请前往设置</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    
+    <string name="root_folder_name">myaccountbook</string>
+    <string name="config_folder_name">config</string>
+    <string name="config_file_name">myaccountbook.xml</string>
+    <string name="sms_receiver_phone_number_file_name">receiver.xml</string>
+    <string name="data_folder_name">data</string>
+    <string name="my_data_file_name">mine.xml</string>
+    <string name="his_data_file_name">his.xml</string>
+    <string name="her_data_file_name">her.xml</string>
+    <string name="my_data__json_file_name">mine.json</string>
+    <string name="his_data_json_file_name">his.json</string>
+    <string name="her_data_json_file_name">her.json</string>
+    
+    <string name="label_outcome_type">类别：</string>
+    <string name="label_outcome">金额：</string>
+    <string name="label_remark">备注：</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_sendTextMessage">短信通知</string>
+    <string name="alert_outcome_required">金额不能为空</string>
+    <string name="you_have_spent">您已经花费</string>
+    
+    <string name="table_header_user_name">用户</string>
+    <string name="table_header_outcome_type">类别</string>
+    <string name="table_header_outcome">金额</string>
+    <string name="table_header_time">时间</string>
+    <string name="table_header_remark">备注</string>
+    
+    <string name="daily_report">日报</string>
+    <string name="monthly_report">月报</string>
+    <string name="yearly_report">年报</string>
+    
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    
+    <string name="change_date_or_report_type">更改日期或报表类型</string>
+   	<string name="alert_select_date_and_report_type">请选择报表类型及相应日期</string>
+   	<string name="alert_update_account">账务数据更新</string>
+   	<string name="stastics">支出统计</string>
+   	<string name="total">总计</string>
+    <string name="currency_unit">￥</string>
+    
+    <string name="btn_set_receiver">设置短信接收人号码</string>
+    <string name="btn_data_integration">家庭账务数据合并</string>
+    <string name="btn_exit">退出</string>
+    
+    <!--  此处只允许追加，不允许插入或者删除以保持数据的一致性 -->
+    <string-array name="outcome_types">
+        <item>饮食</item>
+        <item>交通</item>
+        <item>医疗</item>
+        <item>衣服</item>
+        <item>教育</item>
+        <item>娱乐</item>
+        <item>家居</item>
+        <item>人情</item>
+        <item>杂项</item>
+    </string-array>
+    
+    <string name="adapter_class_name">coolvolcano.myaccountbook.dao.AccountJSONAdapter</string>
+    
+    <color name="blue">#2671A5</color>
+    <color name="grey">#EAEAEA</color>
+    <color name="red">#FF0000</color>
+    
+</resources>
